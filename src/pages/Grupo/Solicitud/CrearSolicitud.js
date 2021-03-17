@@ -38,25 +38,25 @@ export const CrearSolicitud = () => {
 
   const handleChange = (e) => {
     switch (e.target.name) {
-      case titulo:
+      case "titulo":
         setTitulo(e.target.value)
         break;
-      case descripcion:
+      case "descripcion":
         setDescripcion(e.target.value)
         break;
-      case barrio:
+      case "barrio":
           setBarrio(e.target.value)
         break;
-      case categoria:
+      case "categoria":
           setCategoria(e.target.value)
         break;
-      case habilidad:
+      case "habilidad":
           setHabilidad(e.target.value)
         break;
-      case imagen:
+      case "imagen":
           setImg(e.target.value)
         break;
-      case propina:
+      case "propina":
           setpropina(e.target.value)
         break;
       default:
@@ -133,7 +133,11 @@ export const CrearSolicitud = () => {
                 fullWidth
                 id="demo-simple-select"
                 value={categoria}
-                onChange={handleChangeCategoria}
+                onChange={
+                  e => {
+                    handleChange(e);
+                  }
+                }
               >
                 {/*Todo categorias */}
                 <MenuItem value={1}>Ten</MenuItem>
@@ -154,7 +158,11 @@ export const CrearSolicitud = () => {
                 fullWidth
                 id="demo-simple-select"
                 value={categoria}
-                onChange={handleChangeCategoria}
+                onChange={
+                  e => {
+                    handleChange(e);
+                  }
+                }
               >
                 {/*Todo habilidades */}
                 <MenuItem value={1}>Ten</MenuItem>
