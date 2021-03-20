@@ -3,7 +3,7 @@ const URLAPI = 'http://52.7.252.110:8082/';
 
 export const CrearSolicitudService = (solicitud) => {
 
-    const url = `${URLAPI}crearOferta`;
+    const url = `${URLAPI}ofertaService/crearOferta`;
     return axios.post(url, solicitud, {
         headers:{
             'Content-Type': 'application/json',
