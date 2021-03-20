@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
-import { Row, Col, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
-import Flatpickr from 'react-flatpickr'
-import { ChevronDown, Mail, Printer, File, Users, Image, ShoppingBag } from 'react-feather';
+// import { Row, Col, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
+// import Flatpickr from 'react-flatpickr'
+// import { ChevronDown, Mail, Printer, File, Users, Image, ShoppingBag } from 'react-feather';
 
 import { getLoggedInUser } from '../../helpers/authUtils';
-import Loader from '../../components/Loader';
-import OverviewWidget from '../../components/OverviewWidget';
+// import Loader from '../../components/Loader';
+// import OverviewWidget from '../../components/OverviewWidget';
 
-import Statistics from './Statistics';
-import RevenueChart from './RevenueChart';
-import TargetChart from './TargetChart';
-import SalesChart from './SalesChart';
-import Orders from './Orders';
-import Performers from './Performers';
-import Tasks from './Tasks';
-import Chat from './Chat';
-
-
+// import Statistics from './Statistics';
+// import RevenueChart from './RevenueChart';
+// import TargetChart from './TargetChart';
+// import SalesChart from './SalesChart';
+// import Orders from './Orders';
+// import Performers from './Performers';
+// import Tasks from './Tasks';
+// import Chat from './Chat';
 import CrearSolicitud from '../Grupo/Solicitud/CrearSolicitud'
 
 class Dashboard extends Component {
@@ -38,6 +36,7 @@ class Dashboard extends Component {
         return (
             <React.Fragment>
 
+                
                 <CrearSolicitud/>
             {/* {<div className="">
                     {this.props.loading && <Loader />}
